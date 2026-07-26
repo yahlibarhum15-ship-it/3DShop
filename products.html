@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>המוצרים שלנו - 3D-Shop</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        button {
+            background: #008cff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🖨️ המוצרים שלנו</h1>
+    <p>דגמי תלת־ממד בעיצוב אישי</p>
+    <nav style="background:white;padding:15px;text-align:center;">
+
+<a href="index.html">🏠 בית</a> |
+<a href="products.html">🛒 מוצרים</a> |
+<a href="order.html">📝 הזמנה</a> |
+<a href="about.html">ℹ️ אודות</a> |
+<a href="contact.html">📞 צור קשר</a> |
+<a href="prices.html">💰 מחירון</a>
+
+</nav>
+</header>
+<input 
+type="text" 
+id="searchBox" 
+placeholder="🔍 חפש מוצר..."
+onkeyup="searchProducts()"
+style="
+padding:12px;
+width:300px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:18px;
+">
+
+<div class="products">
+
+    <div class="products">
+
+    <div class="card product"></div>
+        <div style="font-size:60px;">🏆</div>
+        <h2>גביעים ומדליות</h2>
+        <p>גביעים לקבוצות, תחרויות ואירועים.</p>
+        <h3>מחיר החל מ־50 ₪</h3>
+        <a href="order.html">
+            <button>הזמנה</button>
+        </a>
+    </div
+    <div class="card product"></div>
+        <div style="font-size:60px;">🎁</div>
+        <h2>מתנות אישיות</h2>
+        <p>מחזיקי מפתחות, קופסאות ודגמים מיוחדים.</p>
+        <h3>מחיר החל מ־10 ₪</h3>
+        <a href="order.html">
+            <button>הזמנה</button>
+        </a>
+    </div>
+
+
+    <div class="card product"></div>
+        <div style="font-size:60px;">⚙️</div>
+        <h2>חלקים בהתאמה אישית</h2>
+        <p>חלקים לפי מידה ולפי צורך.</p>
+        <h3>מחיר לפי הצעת מחיר</h3>
+        <a href="order.html">
+            <button>בקשת הצעה</button>
+        </a>
+    </div>
+
+
+</div>
+
+<script>
+function searchProducts() {
+
+    let input = document.getElementById("searchBox").value.toLowerCase();
+
+    let products = document.getElementsByClassName("product");
+
+    for (let i = 0; i < products.length; i++) {
+
+        let text = products[i].textContent.toLowerCase();
+
+        if (text.includes(input)) {
+            products[i].style.display = "block";
+        } else {
+            products[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<footer style="
+background:#222;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:40px;">
+
+<h3>🖨️ 3D-Shop</h3>
+
+<p>הדפסות תלת־ממד בהתאמה אישית</p>
+
+<p>📍 איסוף עצמי בתיאום מראש</p>
+
+<p>📞 לפרטים והזמנות – פנו אלינו בוואטסאפ</p>
+
+<p>© 2026 3D-Shop</p>
+
+</footer>
+
+</body>
+</html>

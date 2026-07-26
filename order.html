@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הזמנה - 3D-Shop</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        .form-box {
+            background: white;
+            width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #008cff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🖨️ הזמנה מ־3D-Shop</h1>
+    <p>שלחו לנו פרטים על ההדפסה שאתם רוצים</p>
+    <nav style="background:white;padding:15px;text-align:center;">
+
+<a href="index.html">🏠 בית</a> |
+<a href="products.html">🛒 מוצרים</a> |
+<a href="order.html">📝 הזמנה</a> |
+<a href="about.html">ℹ️ אודות</a> |
+<a href="contact.html">📞 צור קשר</a> |
+<a href="prices.html">💰 מחירון</a>
+
+</nav>
+</header>
+
+<h2>📝 טופס הזמנה</h2>
+
+<label>שם מלא:</label><br>
+<input type="text" placeholder="השם שלך"><br><br>
+
+<label>טלפון:</label><br>
+<input type="tel" placeholder="05X-XXXXXXX"><br><br>
+
+<label>אימייל (לא חובה):</label><br>
+<input type="email" placeholder="example@email.com"><br><br>
+
+<label>מה תרצו להדפיס?</label><br>
+<textarea rows="4" placeholder="תארו את המוצר שאתם רוצים..."></textarea><br><br>
+
+<label>כמות:</label><br>
+<input type="number" min="1" value="1"><br><br>
+
+<label>קובץ STL / 3MF (אם יש):</label><br>
+<input type="file" accept=".stl,.3mf,.obj"><br><br>
+
+<label>צבע מבוקש:</label><br>
+<input type="text" placeholder="לדוגמה: שחור, לבן, כחול (נבדוק זמינות)"><br><br>
+
+<label>הערות נוספות:</label><br>
+<textarea rows="4" placeholder="כל מידע נוסף שחשוב לנו לדעת"></textarea><br><br>
+<hr>
+
+<label>
+<input type="checkbox" required>
+               אני מאשר/ת שהפרטים שמסרתי נכונים.
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" required>
+               אני מבין/ה שהמחיר הסופי ייקבע לאחר בדיקת הפרטים או קובץ ההדפסה.
+</label>
+
+<br><br>
+
+<a class="whatsapp-btn" 
+href="https://wa.me/972515305424?text=שלום%2C%20הגעתי%20דרך%20אתר%203D-Shop.%0A%0Aאני%20רוצה%20להדפיס:%0A%0Aגודל%20ההדפסה:%0A%0Aצבע%20רצוי:%0A%0Aכמות:%0A%0Aאשמח%20לקבל%20הצעת%20מחיר."
+target="_blank">
+הזמנה בווטסאפ
+</a>
+
+<p id="successMessage" style="display:none;color:green;font-size:20px;">
+✅ ההזמנה מוכנה לשליחה לוואטסאפ!
+</p>
+
+<h3>🖨️ 3D-Shop</h3>
+
+<p>הדפסות תלת־ממד בהתאמה אישית</p>
+
+<p>📍 איסוף עצמי בתיאום מראש</p>
+
+<p>📞 לפרטים והזמנות – פנו אלינו בוואטסאפ</p>
+
+<p>© 2026 3D-Shop</p>
+
+<footer style="
+background:#222;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:40px;">
+
+</footer>
+
+<script>
+
+function sendWhatsApp(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let product = document.getElementById("product").value;
+let quantity = document.getElementById("quantity").value;
+let color = document.getElementById("color").value;
+let notes = document.getElementById("notes").value;
+
+let message =
+"שלום, אני מעוניין לבצע הזמנה.%0A%0A" +
+
+"שם: " + name + "%0A" +
+"טלפון: " + phone + "%0A" +
+"המוצר: " + product + "%0A" +
+"כמות: " + quantity + "%0A" +
+"צבע מבוקש: " + color + "%0A" +
+"הערות: " + notes;
+
+document.getElementById("successMessage").style.display = "block";
+
+window.open(
+"https://wa.me/972515305424?text=" + message,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>

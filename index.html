@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        button {
+            background: #008cff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    nav {
+    background: white;
+    padding: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2563eb;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.card h3 {
+    color: #111827;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    color: #008cff;
+    margin: 10px;
+    font-size: 18px;
+    .slider {
+    width: 80%;
+    margin: 40px auto;
+    background: #2563eb;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+</style>
+
+</head>
+
+<script>
+
+</script>
+<script>
+
+</script>
+
+<button onclick="topFunction()" id="topBtn">
+⬆️ חזרה למעלה
+</button>
+
+<style>
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+</style>
+
+<script>
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+<body>
+
+<header>
+    <h1>🖨️ 3D-Shop</h1>
+    <p>הדפסות תלת־ממד בהתאמה אישית</p>
+</header>
+
+<nav>
+    <a href="index.html">🏠 בית</a>
+    |
+    <a href="products.html">🛒 מוצרים</a>
+    |
+    <a href="order.html">📝 הזמנה</a>
+    |
+    <a href="about.html">ℹ️ אודות</a>
+    |
+    <a href="contact.html">📞 צור קשר</a>
+
+    <a href="prices.html">💰 מחירון</a>
+    
+    <a href="gallery.html">🖼️ גלריה</a>
+</nav
+
+<div class="slider">
+
+    <div class="slide active">
+        🖨️ הדפסות תלת־ממד באיכות גבוהה
+    </div>
+
+    <div class="slide">
+        🏆 גביעים ומדליות בהתאמה אישית
+    </div>
+
+    <div class="slide">
+        🎁 מתנות מיוחדות בעיצוב אישי
+    </div>
+
+</div>
+
+<section style="padding:40px;">
+
+<h2>🛒 קטגוריות מוצרים</h2>
+
+<div style="
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+">
+
+<div class="card">
+<h2>🏆 גביעים ומדליות</h2>
+<p>לקבוצות ספורט, תחרויות ואירועים.</p>
+
+<a href="products.html">
+<button>לצפייה במוצרים</button>
+</a>
+</div>
+
+
+<div class="card">
+<h2>🎁 מתנות אישיות</h2>
+<p>מוצרים מיוחדים עם עיצוב לפי בקשה.</p>
+
+<a href="products.html">
+<button>לצפייה במוצרים</button>
+</a>
+</div>
+
+
+<div class="card">
+<h2>⚙️ חלקים מודפסים</h2>
+<p>פתרונות וחלקים בהתאמה אישית.</p>
+
+<a href="order.html">
+<button>בקשת הצעה</button>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<div style="text-align:center; margin:40px 0;">
+    <a href="order.html">
+        <button style="
+            background:#22c55e;
+            color:white;
+            font-size:24px;
+            padding:18px 40px;
+            border:none;
+            border-radius:12px;
+            cursor:pointer;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+        ">
+            🚀 הזמן עכשיו
+        </button>
+    </a>
+</div>
+
+<section style="padding:40px;background:#f8f9fa;">
+
+<h2>❓ שאלות נפוצות</h2>
+
+<h3>🕒 כמה זמן לוקחת הדפסה?</h3>
+<p>תלוי במורכבות ההדפסה ובגודלה</p>
+
+<h3>📁 האם אפשר לשלוח קובץ STL או 3MF?</h3>
+<p>כן, אפשר לצרף את הקובץ בטופס ההזמנה.</p>
+
+<h3>✏️ האם אפשר לבקש תכנון של מודל?</h3>
+<p>כן, אם אין לכם קובץ מוכן אפשר לתאר את הרעיון ונבדוק אם ניתן לתכנן אותו.</p>
+
+<h3>🧵 אילו חומרים זמינים?</h3>
+<p>אנחנו עובדים בעיקר עם PLA. אם אתם צריכים חומר אחר, אפשר לשאול ונבדוק זמינות.</p>
+
+<h3>📍 איך מקבלים את ההזמנה?</h3>
+<p>איסוף עצמי בלבד – בתיאום מראש.</p>
+
+</section>
+
+<a href="products.html">
+    <button>המוצרים שלנו</button>
+</a>
+
+<a href="order.html">
+    <button>הזמנה</button>
+</a>
+
+<h2>המוצרים שלנו</h2>
+
+<section>
+    <h2>⭐ הדפסות מומלצות</h2>
+
+    <div class="products">
+
+       
+
+    </div>
+</section>
+
+<section style="background:#2563eb;color:white;padding:50px;text-align:center;border-radius:15px;margin:40px;">
+
+<h2>💰 צריכים הצעת מחיר?</h2>
+
+<p>
+שלחו לנו את פרטי ההדפסה, ואנחנו נחזור אליכם עם הצעת מחיר ללא התחייבות.
+</p>
+
+<a href="order.html">
+<button style="
+background:white;
+color:#2563eb;
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:10px;
+cursor:pointer;">
+📋 בקש הצעת מחיר
+</button>
+</a>
+
+</section>
+
+<div class="products">
+
+   <div class="products">
+
+    <div class="card">
+        <h2>🏆 גביע תלת־ממד</h2>
+        <p>גביעים לקבוצות, אירועים ותחרויות</p>
+        <h3>מחיר החל מ־50 ₪</h3>
+        <a href="order.html">
+            <button>הזמנה</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>🔑 מחזיק מפתחות</h2>
+        <p>עיצוב אישי עם שם או לוגו</p>
+        <h3>מחיר החל מ־10 ₪</h3>
+        <a href="order.html">
+            <button>הזמנה</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>📦 קופסה מודפסת</h2>
+        <p>קופסאות קטנות בהתאמה אישית</p>
+        <h3>מחיר החל מ־25 ₪</h3>
+        <a href="order.html">
+            <button>הזמנה</button>
+        </a>
+    </div>
+
+<section style="padding:40px; background:#ffffff; margin-top:30px;">
+    <h2>⭐ למה לבחור ב־3D-Shop?</h2>
+
+    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+
+        <div style="width:220px;padding:20px;border:1px solid #ddd;border-radius:12px;">
+            <h3>🖨️ איכות גבוהה</h3>
+            <p>הדפסה במדפסת Flashforge 5M Pro לקבלת תוצאות מדויקות.</p>
+        </div>
+
+        <div style="width:220px;padding:20px;border:1px solid #ddd;border-radius:12px;">
+            <h3>⚡ שירות מהיר</h3>
+            <p>זמני הדפסה קצרים ועדכונים לאורך התהליך.</p>
+        </div>
+
+        <div style="width:220px;padding:20px;border:1px solid #ddd;border-radius:12px;">
+            <h3>🎨 התאמה אישית</h3>
+            <p>כל מוצר מיוצר לפי הבקשה והצרכים של הלקוח.</p>
+        </div>
+
+        <div style="width:220px;padding:20px;border:1px solid #ddd;border-radius:12px;">
+            <h3>💬 ליווי אישי</h3>
+            <p>אפשר להתייעץ לפני ההדפסה כדי למצוא את הפתרון המתאים.</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="padding:40px;">
+    <h2>📦 איך מזמינים?</h2>
+
+    <p>1️⃣ ממלאים את טופס ההזמנה באתר.</p>
+    <p>2️⃣ מצרפים קובץ STL או מתארים את הרעיון.</p>
+    <p>3️⃣ אנחנו חוזרים עם הצעת מחיר.</p>
+    <p>4️⃣ לאחר אישור מתחילים בהדפסה.</p>
+    <p>5️⃣ איסוף או משלוח לפי הצורך.</p>
+</section>
+
+</div>
+</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+<div class="card">
+    <h3>מחזיק מפתחות</h3>
+    <p>הדפסה אישית לפי בקשה</p>
+</div><a href="https://wa.me/972515305424"_blank">
+    <button>הזמנה בוואטסאפ</button>
+</a>
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180?text=מחזיק+מפתחות+3D" width="250">
+        <h3>מחזיק מפתחות</h3>
+        <p>הדפסה אישית לפי בקשה</p>
+        <a href="https://wa.me/972515305424"_blank">
+    <button>הזמנה בוואטסאפ</button>
+</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180?text=גביע+תלת+ממד" width="250">
+        <h3>גביע תלת־ממד</h3>
+        <p>גביעים ומדליות לאירועים</p>
+        <a href="https://wa.me/972515305424"_blank">
+    <button>הזמנה בוואטסאפ</button>
+</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180?text=קופסה+מודפסת" width="250">
+        <h3>קופסה קטנה</h3>
+        <p>קופסאות בעיצוב אישי</p>
+        <a href="https://wa.me/972515305424_blank">
+    <button>הזמנה בוואטסאפ</button>
+</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180?text=דגם+3D" width="250">
+        <h3>דגם תלת־ממד</h3>
+        <p>פסלים ודגמים מיוחדים</p>
+        <a href="https://wa.me/972515305424" target="_blank">
+    <button>הזמנה בוואטסאפ</button>
+</a>
+    </div>
+
+</div>
+<img src="images/product1.jpg" width="250">
+<footer style="
+background:#222;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:50px;">
+
+<footer
+ style="
+background:#222;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:40px;">
+
+<section style="padding:40px;background:#222;">
+
+<h2>⭐ מה הלקוחות אומרים?</h2>
+
+<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+<section style="padding:40px;background:#222;
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"שירות מעולה והדפסה באיכות גבוהה!"</p>
+</div>
+<section style="padding:40px;background:#222;
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"הגביע יצא מושלם, בדיוק כמו שרצינו."</p>
+</div>
+<section style="padding:40px;background:#222;
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"הזמנה מהירה ויחס מצוין."</p>
+</div>
+
+</div>
+
+</section>
+
+<h3>🖨️ 3D-Shop</h3>
+
+<p>הדפסות תלת־ממד בהתאמה אישית</p>
+
+<p>📍 איסוף עצמי בתיאום מראש</p>
+
+<p>📞 לפרטים והזמנות – פנו אלינו בוואטסאפ</p>
+
+<p>© 2026 3D-Shop</p>
